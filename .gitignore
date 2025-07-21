@@ -1,0 +1,61 @@
+# Ignore Docker volumes and temporary files
+.docker/data/
+.docker/bundle/
+.docker/nginx/logs/
+.docker/tmp/
+.DS_Store
+/.bundle
+/vendor/bundle
+/log/*.log
+/tmp/
+/build/
+/public/assets
+/public/packs
+/public/vite
+/node_modules
+/yarn-error.log
+/yarn-debug.log*
+.byebug_history
+.console_history
+/coverage/
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/seeds.rb
+/db/schema.rb
+/storage/*
+!/storage/.keep
+!/public/uploads
+
+# Rails specific
+/config/master.key
+/config/credentials/production.key
+/config/initializers/secret_token.rb
+/config/boot.rb
+/config/puma.rb
+/config/database.yml # Crucial: Your database credentials should NOT be in Git!
+/config/secrets.yml
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/development.sqlite3
+/db/test.sqlite3
+/tmp/*
+/vendor/*
+
+# Dotenv environment variables
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Specific for Docker
+*.log
+*.swp
+.DS_Store
+.idea/
+.vscode/
+Thumbs.db
+
+# Output of the docker-compose process, e.g. for postgres
+data/

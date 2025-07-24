@@ -23,6 +23,9 @@ services:
       DATABASE_URL: ${DATABASE_URL}
     volumes:
       - .:/app
+    env_file:
+    - .env
+    
 
   nginx:
     image: nginx:latest

@@ -20,12 +20,12 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: ${DATABASE_URL}
+      RAILS_ENV: development
     volumes:
       - .:/app
     env_file:
     - .env
-    
+
 
   nginx:
     image: nginx:latest
